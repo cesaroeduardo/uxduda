@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{404.html} !-f
+RewriteCond %{404.html} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
