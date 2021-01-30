@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{404.html} !-f
 RewriteCond %{404.html} !-d
-RewriteCond %{case_seufisio.html} !-f
-RewriteCond %{case_seufisio.html} !-d
+RewriteCond %{case-seufisio.html} !-f
+RewriteCond %{case-seufisio.html} !-d
 RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
