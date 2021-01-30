@@ -78,6 +78,7 @@ p {
   font-weight: 700;
   color: #333333;
   line-height: 75px;
+  padding: 0px 80px;
 }
 
 a {
@@ -1015,6 +1016,7 @@ figcaption {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .utility-page-form {
