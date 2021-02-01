@@ -76,6 +76,151 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
       }
     }
 
+    /* nav mobile menu */
+    
+    .header {
+      background-color: #fff;
+      position: relative;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+    }
+    
+    
+    .header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: #fff;
+    }
+    
+    .header li a {
+      display: block;
+      padding: 20px 30px;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+    
+    .logo-duda {
+      display: block;
+      position: relative;
+      float: left;
+      line-height: 60px;
+      padding: 0 20px !important;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+    
+    .header li a:hover,
+    .header .menu-btn:hover {
+      background-color: #fff;
+    }
+    
+    /* menu */
+    
+    .header .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+    
+    /* menu icon */
+    
+    .header .menu-icon {
+      cursor: pointer;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+    
+    .header .menu-icon .nav-icon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+    
+    .header .menu-icon .nav-icon:before,
+    .header .menu-icon .nav-icon:after {
+      background: #333;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    
+    .header .menu-icon .nav-icon:before {
+      top: 5px;
+    }
+    
+    .header .menu-icon .nav-icon:after {
+      top: -5px;
+    }
+    
+    /* menu btn */
+    
+    .header .menu-btn {
+      display: none;
+    }
+    
+    .header .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+    .header .menu-btn:checked ~ body {
+      opacity: .5;
+      background: #000;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top:0;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top:0;
+    }
+
+    /* 48em = 768px @ 16pt font */
+    
+    @media (min-width: 48em) {
+      .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .header .menu-icon {
+        display: none;
+      }
+    }
+    @media (max-width: 991px) {
+      .header {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #33333310;
+      }
+      .logo-duda {
+        margin: 0;
+        padding: 0px 20px !important;
+      }
+    }
+    
+
 /* ==========================================================================
    Start of custom CSS
    ========================================================================== */
