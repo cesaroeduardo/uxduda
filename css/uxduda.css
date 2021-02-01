@@ -211,7 +211,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     }
     @media (max-width: 991px) {
       .header {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
       }
       .logo-duda {
         margin: 0;
@@ -347,6 +347,7 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 45px 0;
 }
 
 .hero.pages {
