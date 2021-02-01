@@ -212,11 +212,17 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     @media (max-width: 991px) {
       .header {
         margin-bottom: 30px;
-        border-bottom: 1px solid #33333310;
       }
       .logo-duda {
         margin: 0;
         padding: 0px 20px !important;
+      }
+      .header ul {
+        background: #33333310;
+      }
+      .header li a:hover,
+      .header .menu-btn:hover {
+        background-color:  transparent;
       }
     }
     
