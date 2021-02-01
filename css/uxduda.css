@@ -15,21 +15,19 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
    Duda custom CSS
    ========================================================================== */
 
+   .interno {
+     text-align: left !important;
+     position: relative;
+     float: left;
+   }
    .interno h2 {
     font-family: Rubik Mono One;
-    font-size: 52px;
+    font-size: 3em;
     font-style: normal;
     font-weight: 400;
     line-height: 60px;
     letter-spacing: 0em;
     text-align: left; 
-   }
-   .interno p {
-    height: 780px;
-    width: 561px;
-    left: 479px;
-    top: 0px;
-    border-radius: nullpx;    
    }
    .interno h3 {
     font-family: Rubik Mono One;
@@ -49,19 +47,12 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     letter-spacing: 0em;
     text-align: left;    
    }
-   .interno img {
-    height: 415px;
-    width: 415px;
-    left: 0px;
-    top: 0px;
-    border-radius: 24.702381134033203px;    
-   }
 
 /* ==========================================================================
    Start of custom CSS
    ========================================================================== */
 body {
-  font-family: Roboto;
+  font-family: Rubik, sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
@@ -1702,6 +1693,12 @@ figcaption {
 .container-4 {
   display: none;
 }
+.no-desktop {
+  display: none;
+}
+.no-mobile {
+  display: block;
+}
 
 html.w-mod-js *[data-ix="load-up"] {
   opacity: 0;
@@ -2275,6 +2272,12 @@ html.w-mod-js *[data-ix="load-up"] {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .no-mobile {
+    display: none;
   }
 
   .container-4.w--current {
