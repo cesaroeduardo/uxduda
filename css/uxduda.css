@@ -75,7 +75,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
         line-height: 30px;
       }
       .sub-header {
-        margin: 15px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
       }
     }
 
@@ -174,7 +174,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     
     .header .menu-btn:checked ~ .menu {
       max-height: 300px;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
     }
     .header .menu-btn:checked ~ body {
       opacity: .5;
