@@ -28,7 +28,7 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 <IfModule mod_headers.c>
-    <FilesMatch "\.(ico|gif|jpg|jpeg|png)$">
+    <FilesMatch "\.(ico|gif|jpg|jpeg|png|svg)$">
           Header set Cache-Control "max-age=31536000"
     </FilesMatch>
     <FilesMatch "\.(css|js)$">
