@@ -1546,6 +1546,7 @@ figcaption {
 
 .foto-eduardo {
   display: block;
+  border-radius: 25px;
 }
 
 .column-4 {
