@@ -74,6 +74,9 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
         font-size: 20px;
         line-height: 30px;
       }
+      .sub-header {
+        margin: 15px 0px 0px 0px;
+      }
     }
 
     /* nav mobile menu */
@@ -170,7 +173,8 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     }
     
     .header .menu-btn:checked ~ .menu {
-      max-height: 240px;
+      max-height: 300px;
+      margin-bottom: 30px;
     }
     .header .menu-btn:checked ~ body {
       opacity: .5;
@@ -218,7 +222,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
         padding: 0px 20px !important;
       }
       .header ul {
-        background: #33333310;
+        background: rgb(248, 248, 248);
       }
       .header li a:hover,
       .header .menu-btn:hover {
