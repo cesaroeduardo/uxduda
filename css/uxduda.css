@@ -213,7 +213,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
         display: none;
       }
     }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .header {
         margin-bottom: 0px;
       }
@@ -1904,6 +1904,7 @@ html.w-mod-js *[data-ix="load-up"] {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    padding: 25px 0;
   }
 
   .wrapper-title {
