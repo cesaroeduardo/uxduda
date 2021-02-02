@@ -1,0 +1,53 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+RewriteCond %{404.html} !-f
+RewriteCond %{404.html} !-d
+RewriteCond %{sobre.html} !-f
+RewriteCond %{sobre.html} !-d
+RewriteCond %{downloads.html} !-f
+RewriteCond %{downloads.html} !-d
+RewriteCond %{cases.html} !-f
+RewriteCond %{cases.html} !-d
+RewriteCond %{contato.html} !-f
+RewriteCond %{contato.html} !-d
+RewriteCond %{case-seufisio.html} !-f
+RewriteCond %{case-seufisio.html} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+# Cache-control headers
+    # 2 HOURS
+    #<filesMatch "*">
+        Header set Cache-Control "max-age=7200, must-revalidate"
+    #</filesMatch>
+
+    # 4 WEEKS
+    <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|swf|svg)$">
+        Header set Cache-Control "max-age=2409600, public"
+    </filesMatch>
+
+    # 1 DAY
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "max-age=86400, public, must-revalidate"
+        #Header set Cache-Control "max-age=0, public, must-revalidate"
+    </filesMatch>
+
+    # 2 DAYS
+    <filesMatch "\.(xml|txt)$">
+        Header set Cache-Control "max-age=172800, public, must-revalidate"
+    </filesMatch>
+
+    # 2 HOURS
+    <filesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=7200, must-revalidate"
+    </filesMatch>
+
+      # 1 YEAR
+    <filesMatch "\.(eot|ttf|woff|woff2)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </filesMatch>
+
+    <FilesMatch "\.(gif|jpg|png|ico|css|js|pdf|txt)$">
+        Header append Cache-Control "public"
+    </FilesMatch>
+</IfModule>
