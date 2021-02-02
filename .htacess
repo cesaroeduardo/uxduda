@@ -14,7 +14,8 @@ RewriteCond %{contato.html} !-f
 RewriteCond %{contato.html} !-d
 RewriteCond %{case-seufisio.html} !-f
 RewriteCond %{case-seufisio.html} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
 ExpiresActive On
 ExpiresByType image/jpg "access 1 year"
 ExpiresByType image/jpeg "access 1 year"
