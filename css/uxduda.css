@@ -1527,7 +1527,7 @@ figcaption {
 }
 
 .foto-eduardo {
-  display: block;
+  display: block !important;
   border-radius: 25px;
 }
 
@@ -1863,10 +1863,10 @@ figcaption {
   display: none;
 }
 .no-desktop {
-  display: none;
+  display: none !important;
 }
 .no-mobile {
-  display: block;
+  display: block !important;
 }
 
 html.w-mod-js *[data-ix="load-up"] {
@@ -2444,10 +2444,10 @@ html.w-mod-js *[data-ix="load-up"] {
     justify-content: flex-end;
   }
   .no-desktop {
-    display: block;
+    display: block !important;
   }
   .no-mobile {
-    display: none;
+    display: none !important;
   }
 
   .container-4.w--current {
