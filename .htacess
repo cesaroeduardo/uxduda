@@ -15,20 +15,6 @@ RewriteCond %{contato.html} !-d
 RewriteCond %{case-seufisio.html} !-f
 RewriteCond %{case-seufisio.html} !-d
 RewriteRule ^(.*)\.html$ /$1 [L,R=301]
-ExpiresActive On
-<IfModule mod_expires.c>
-ExpiresActive On
-ExpiresByType image/jpg "access 1 year"
-ExpiresByType image/jpeg "access 1 year"
-ExpiresByType image/gif "access 1 year"
-ExpiresByType image/png "access 1 year"
-ExpiresByType text/css "access 1 month"
-ExpiresByType application/pdf "access 1 month"
-ExpiresByType application/javascript "access 1 month"
-ExpiresByType application/x-javascript "access 1 month"
-ExpiresByType application/x-shockwave-flash "access 1 month"
-ExpiresByType image/x-icon "access 1 year"
-ExpiresDefault "access 2 days"
 # Cache-control headers
     # 2 HOURS
     #<filesMatch "*">
