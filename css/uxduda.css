@@ -155,7 +155,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
     }
     
     .header .menu-btn:checked ~ .menu {
-      max-height: 300px;
+      max-height: 600px;
       margin-bottom: 45px;
     }
     .header .menu-btn:checked ~ body {
