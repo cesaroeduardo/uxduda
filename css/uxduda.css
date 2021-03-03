@@ -303,6 +303,12 @@ a:hover {
   transition: ease-in-out 50ms;
 }
 
+button:hover {
+  color: #000;
+  opacity: .9;
+  transition: ease-in-out 50ms;
+}
+
 img {
   display: inline-block;
   max-width: 100%;
