@@ -298,15 +298,13 @@ p {
   color: rgba(130, 130, 130, 1);
 }
 
-a {
+.linkreset {
   /* padding-bottom: 5px; */
   /* box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.1); */
   /* -webkit-transition: box-shadow 200ms ease, color 200ms ease;
   transition: box-shadow 200ms ease, color 200ms ease; */
-  /* color: grey;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none; */
+  color: #330c75;
+  text-decoration: none; 
 }
 
 a:hover {
