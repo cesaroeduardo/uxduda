@@ -3046,6 +3046,9 @@ figcaption {
     position: relative;
     margin-bottom: 24px;
     opacity: .64;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 
 .instruction svg {
@@ -3059,9 +3062,7 @@ figcaption {
     font-size: 14px;
     text-align: left;
     float: left;
-    height: 24px;
     margin: 0;
-    margin-bottom: 24px;
     line-height: 16px;
 }
 
