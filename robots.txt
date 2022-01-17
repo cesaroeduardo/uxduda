@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /case-seufisio
+Disallow: /case-line
