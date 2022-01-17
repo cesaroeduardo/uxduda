@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /case-seufisio
 Disallow: /case-line
 
-Sitemap: http://www.uxduda.com/sitemap.xml
+Sitemap: http://uxduda.com/sitemap.xml
