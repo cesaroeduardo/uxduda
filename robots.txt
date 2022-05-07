@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /case-seufisio
+Disallow: /seufisio
 Disallow: /line
 
 Sitemap: http://uxduda.com/sitemap.xml

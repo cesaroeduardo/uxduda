@@ -12,8 +12,8 @@ RewriteCond %{cases.html} !-f
 RewriteCond %{cases.html} !-d
 RewriteCond %{contato.html} !-f
 RewriteCond %{contato.html} !-d
-RewriteCond %{case-seufisio.html} !-f
-RewriteCond %{case-seufisio.html} !-d
+RewriteCond %{seufisio.html} !-f
+RewriteCond %{seufisio.html} !-d
 RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 # Cache-control headers
     # 2 HOURS
